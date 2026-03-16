@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clay & Cactus Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav">
+            <img class="logo" src="assets/Illustrative Logo.PNG" alt="Clay & Cactus logo">
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">☰</button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="About.html">About</a>
+                <a href="Visit.html">Visit the Market</a>
+                <a href="Apply.html">Apply</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <div class="hero-text">
+                <img class="hero-text-overlay" src="assets/gold leaf straight.PNG" alt="" aria-hidden="true">
+                <img class="hero-logo" src="assets/logo.png" alt="Clay & Cactus Market logo">
+                <p class="hero-subtitle">A curated neighborhood market for local artisans, makers and small businesses in Henderson, NV.</p>
+                <div class="hero-actions">
+                    <a href="Apply.html" class="btn cta--alt">Apply as a Vendor</a>
+                </div>
+            </div>
+            <div class="hero-media">
+                <img src="assets/Gold sun logo.PNG" alt="Gold sun logo placeholder" class="hero-image-placeholder">
+            </div>
+        </section>
+
+        <section class="features container">
+            <article class="feature-card feature-card--about">
+                <div class="feature-card__title">
+                    <h2>About Us</h2>
+                    <img src="assets/Gold sun logo.PNG" alt="Gold sun logo" class="feature-icon" />
+                </div>
+                <p>Learn the story behind Clay & Cactus Market</p>
+                <a href="About.html" class="feature-link feature-link--button">Learn More</a>
+            </article>
+            <article class="feature-card feature-card--next">
+                <h2>Next Market</h2>
+                <p>Find the date, location, and vendor lineup for the next market day in Henderson.</p>
+                <a href="Visit.html" class="feature-link feature-link--outline">See details</a>
+                <img src="assets/Blue leaf left.PNG" alt="Blue leaf" class="feature-icon-right" />
+            </article>
+            <article class="feature-card">
+                <h2>Stay in the Loop</h2>
+                <p>Sign up for updates and be the first to hear about vendor applications & events.</p>
+                <form class="feature-form" action="https://formspree.io/f/xbdzkvpv" method="POST">
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <button type="submit" class="btn join-button">Join</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function(){
+            var nav = document.getElementById('nav-links');
+            nav.classList.toggle('show');
+        });
+    </script>
+
+    <section class="contact-band">
+        <div class="container contact-container">
+            <div class="contact-meta">
+                <h3>Contact us with questions</h3>
+                <p>Need help? Send us a message and we’ll get back to you soon.</p>
+            </div>
+            <form class="contact-form" action="https://formspree.io/f/mdawwndp" method="POST">
+                <input type="email" name="email" placeholder="Your email" required>
+                <input type="text" name="name" placeholder="Your name">
+                <textarea name="message" rows="2" placeholder="Your question..."></textarea>
+                <button type="submit" class="btn cta--alt">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <a href="https://instagram.com/clayandcactusmarket" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
+            <p class="footer-brand">&copy; 2026 Clay & Cactus LLC. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
