@@ -24,20 +24,39 @@
 	</header>
 
 	<main>
-		<section class="hero container error-hero">
-			<div class="error-card">
-				<img class="error-card-overlay" src="assets/Gold leaf left.PNG" alt="" aria-hidden="true">
-				<h1>Page is coming soon!</h1>
+		<section class="hero container page-hero page-hero--visit">
+			<div class="page-hero-copy">
+				<img class="page-hero-overlay" src="assets/Blue leaf left.PNG" alt="" aria-hidden="true">
+				<p class="section-label">Visit the Market</p>
+				<h1>Market details will be posted here as soon as they are available.</h1>
+				<p class="page-lead">We do not have the next market date, location, or event details to share just yet, but this page will be updated as soon as that information is confirmed.</p>
 			</div>
+			<div class="page-hero-art">
+				<img src="assets/Gold sun logo.PNG" alt="Clay and Cactus sun logo" class="page-hero-image page-hero-image--sun">
+			</div>
+		</section>
+
+		<section class="container visit-notice">
+			<article class="info-panel visit-notice-panel">
+				<p class="section-label">Check back soon</p>
+				<h2>This page will be updated as soon as the next market information is ready.</h2>
+				<p>Once the next market is announced, this page will include the date, location, hours, and any other details shoppers should know before attending.</p>
+				<p>Until then, the best place to watch for updates is our Instagram, where we will share new information as soon as it is available.</p>
+				<a href="https://instagram.com/clayandcactusmarket" target="_blank" rel="noopener noreferrer" class="btn cta--alt">Follow on Instagram</a>
+			</article>
+			<article class="info-panel visit-signup-panel">
+				<p class="section-label">Email list</p>
+				<h2>Stay in the Loop</h2>
+				<p>Sign up for updates and be the first to hear about vendor applications &amp; events.</p>
+				<form class="feature-form visit-signup-form" action="https://formspree.io/f/xbdzkvpv" method="POST">
+					<input type="email" name="email" placeholder="Your email" required>
+					<button type="submit" class="btn join-button">Join</button>
+				</form>
+			</article>
 		</section>
 	</main>
 
-	<script>
-		document.getElementById('hamburger').addEventListener('click', function(){
-			var nav = document.getElementById('nav-links');
-			nav.classList.toggle('show');
-		});
-	</script>
+	<script src="main.js"></script>
 
 	<footer>
 		<div class="container footer-content">
