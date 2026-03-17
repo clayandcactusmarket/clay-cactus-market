@@ -4,6 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Apply | Clay & Cactus Market</title>
+	<meta name="description" content="Apply to join Clay & Cactus Market as a vendor. Submit your business details to be considered for upcoming market events.">
+	<meta property="og:title" content="Apply | Clay & Cactus Market">
+	<meta property="og:description" content="Submit a vendor application for upcoming Clay & Cactus Market events.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://clayandcactusmarket.com/Apply.html">
+	<meta property="og:image" content="https://clayandcactusmarket.com/assets/logo.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="canonical" href="https://clayandcactusmarket.com/Apply.html">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
@@ -12,13 +20,15 @@
 <body class="apply-page">
 	<header>
 		<div class="container nav">
-			<img class="logo" src="assets/Illustrative Logo.PNG" alt="Clay & Cactus logo">
-			<button class="hamburger" id="hamburger" aria-label="Toggle navigation">☰</button>
+			<a href="/" class="logo-link" aria-label="Go to home page">
+				<img class="logo" src="assets/illustrative-logo.png" alt="Clay & Cactus logo">
+			</a>
+			<button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-controls="nav-links" aria-expanded="false">☰</button>
 			<nav class="nav-links" id="nav-links">
 				<a href="/">Home</a>
 				<a href="About.html">About</a>
 				<a href="Visit.html">Visit the Market</a>
-				<a href="Apply.html" class="active">Apply</a>
+				<a href="Apply.html" class="active" aria-current="page">Apply</a>
 			</nav>
 		</div>
 	</header>
@@ -26,19 +36,19 @@
 	<main>
 		<section class="hero container apply-hero">
 			<div class="apply-hero-copy">
-				<img class="apply-hero-overlay" src="assets/Gold leaf left.PNG" alt="" aria-hidden="true">
+				<img class="apply-hero-overlay" src="assets/gold-leaf-left.png" alt="" aria-hidden="true">
 				<h1>Join the vendor list for upcoming Clay & Cactus markets.</h1>
 				<p class="apply-hero-text">Applications are collected for our vendor list and reviewed once the next market is announced. Submit your information below so we can reach out when dates, details, and openings are available.</p>
 			</div>
 		</section>
 
 		<section class="apply-form-section container">
-			<img class="apply-form-accent" src="assets/gold leaf straight.PNG" alt="" aria-hidden="true">
+			<img class="apply-form-accent" src="assets/gold-leaf-straight.png" alt="" aria-hidden="true">
 			<div class="apply-form-intro">
 				<h2>Vendor application</h2>
 				<p>Thank you for your interest in vending with Clay & Cactus Market. We carefully review every application and will respond as promptly as possible. If you have any questions about the application process, please reach out through our Contact Us form.</p>
 			</div>
-			<form class="vendor-form" action="https://formspree.io/f/xjgaazdv" method="POST" enctype="multipart/form-data">
+			<form class="vendor-form" action="https://formspree.io/f/xjgaazdv" method="POST">
 				<input type="hidden" name="form_type" value="Vendor Application">
 				<div class="vendor-form-grid">
 					<label class="vendor-field">
@@ -81,38 +91,28 @@
 				</label>
 
 				<div class="vendor-form-grid">
-					<label class="vendor-field">
+					<div class="vendor-field">
 						<span>Are you licensed to sell in Nevada?</span>
 						<input type="hidden" name="licensed_in_nv" value="No">
 						<label class="vendor-toggle">
 							<input type="checkbox" name="licensed_in_nv" value="Yes">
 							<span>Yes (leave unchecked for no)</span>
 						</label>
-					</label>
+					</div>
 
-					<label class="vendor-field">
+					<div class="vendor-field">
 						<span>Can you provide your own tent?</span>
 						<input type="hidden" name="can_provide_tent" value="No">
 						<label class="vendor-toggle">
 							<input type="checkbox" name="can_provide_tent" value="Yes">
 							<span>Yes (leave unchecked for no)</span>
 						</label>
-					</label>
+					</div>
 				</div>
 
 				<label class="vendor-field vendor-field--full">
 					<span>Previous markets or event experience</span>
 					<textarea name="market_experience" rows="3" placeholder="List any markets, pop-ups, or events you have participated in."></textarea>
-				</label>
-
-				<label class="vendor-field vendor-field--full">
-					<span>Upload product photo 1 (optional)</span>
-					<input type="file" name="product_photo_1" accept="image/*">
-				</label>
-
-				<label class="vendor-field vendor-field--full">
-					<span>Upload product photo 2 (optional)</span>
-					<input type="file" name="product_photo_2" accept="image/*">
 				</label>
 
 				<label class="vendor-field vendor-field--full">
@@ -133,7 +133,7 @@
 		</section>
 
 		<div class="contact-divider" aria-hidden="true">
-			<img src="assets/cactus swirls.PNG" alt="" class="contact-divider-image">
+			<img src="assets/cactus-swirls.png" alt="" class="contact-divider-image">
 		</div>
 	</main>
 

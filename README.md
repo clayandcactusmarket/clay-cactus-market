@@ -8,7 +8,6 @@ A static website for Clay & Cactus Market built with HTML and CSS.
 - About.html: About page
 - Visit.html: Visit page
 - Apply.html: Vendor application page
-- Error page.html: Generic "coming soon" shell page
 - style.css: Shared site styles
 - main.js: Shared mobile navigation script
 - assets/: Images and fonts
