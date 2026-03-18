@@ -278,7 +278,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 
 .info-panel{
     border-radius: 18px;
-    box-sizing: border-box;
     background: #f4e9dd;
     padding: 28px;
 }
@@ -349,7 +348,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     background: #e8c5ad;
     border-radius: 18px;
     padding: 30px;
-    box-sizing: border-box;
     overflow: hidden;
 }
 
@@ -392,6 +390,67 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     max-width: 680px;
 }
 
+.thanks-hero{
+    margin-bottom: 0;
+}
+
+.thanks-hero-copy{
+    max-width: 700px;
+}
+
+.thanks-section{
+    display: flex;
+    justify-content: center;
+}
+
+.thanks-card{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 760px;
+    background: #f4e9dd;
+    border-radius: 16px;
+    padding: 34px 30px;
+    text-align: center;
+    box-shadow: 0 10px 24px rgba(72, 87, 102, 0.08);
+}
+
+.thanks-card h2{
+    margin: 0 0 14px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    color: #485766;
+}
+
+.thanks-card p{
+    margin: 0 auto 14px;
+    max-width: 620px;
+    color: #485766;
+    font-size: 1rem;
+}
+
+.thanks-card p:last-of-type{
+    margin-bottom: 0;
+}
+
+.thanks-card a:not(.btn){
+    color: #485766;
+    text-decoration-color: #c18c5d;
+    text-underline-offset: 3px;
+}
+
+.thanks-actions{
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.thanks-secondary{
+    background: #485766;
+    color: #ffffff;
+}
+
 .vendor-form{
     position: relative;
     z-index: 1;
@@ -422,11 +481,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     margin-left: 2px;
 }
 
-.vendor-field span.required-star,
-.vendor-agreement span.required-star{
-    color: #c18c5d;
-}
-
 .vendor-toggle{
     display: inline-flex;
     align-items: center;
@@ -448,30 +502,19 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 }
 
 .vendor-field input:not([type="checkbox"]),
-.vendor-field textarea,
-.vendor-field select{
+.vendor-field textarea{
     width: 100%;
     border: none;
     border-radius: 10px;
     padding: 12px 14px;
     background: #f4e9dd;
     color: #485766;
-    box-sizing: border-box;
     outline: none;
 }
 
 .vendor-field textarea{
     resize: none;
     min-height: 120px;
-}
-
-.vendor-field select{
-    appearance: none;
-    background-image: linear-gradient(45deg, transparent 50%, #485766 50%), linear-gradient(135deg, #485766 50%, transparent 50%);
-    background-position: calc(100% - 18px) calc(50% - 2px), calc(100% - 12px) calc(50% - 2px);
-    background-size: 6px 6px, 6px 6px;
-    background-repeat: no-repeat;
-    padding-right: 34px;
 }
 
 .vendor-field input::placeholder,
@@ -517,12 +560,17 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     content: none;
 }
 
-.vendor-submit{
+.vendor-submit,
+.feature-link--button,
+.contact-form button{
     transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .vendor-submit:hover,
-.vendor-submit:focus-visible{
+.vendor-submit:focus-visible,
+.feature-link--button:hover,
+.contact-form button:hover,
+.contact-form button:focus-visible{
     background: #b78253;
     transform: translateY(-1px);
     box-shadow: 0 7px 16px rgba(0,0,0,0.12);
@@ -618,15 +666,7 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     border-radius: 24px;
     background: #c18c5d;
     color: #ffffff;
-    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-.feature-link--button:hover{
-    color: #ffffff;
-    background: #b78253;
-    transform: translateY(-1px);
-    box-shadow: 0 7px 16px rgba(0,0,0,0.12);
 }
 
 .feature-link--outline{
@@ -641,8 +681,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 }
 
 .feature-link--outline:hover{
-    color: #c18c5d;
-    border-color: #c18c5d;
     background: rgba(193, 140, 93, 0.08);
 }
 
@@ -735,11 +773,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     transform: translateX(4px);
 }
 
-.cta{
-    background: #485766;
-    color: #ffffff;
-}
-
 .cta--alt{
     background: #c18c5d;
     color: #ffffff;
@@ -786,10 +819,9 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
         right: 10px;
         opacity: 0.42;
     }
-}
-
-header::after{
-    content: none;
+    .thanks-card{
+        padding: 28px 20px;
+    }
 }
 
 .nav-links{
@@ -886,8 +918,7 @@ textarea:focus-visible{
     content: none;
 }
 
-.container.nav a.logo-link:hover,
-.container.nav a.logo-link.active{
+.container.nav a.logo-link:hover{
     background: transparent;
     color: inherit;
 }
@@ -979,18 +1010,10 @@ textarea:focus-visible{
 .contact-form button{
     width: 100%;
     max-width: 240px;
-    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .contact-form button::after{
     content: none;
-}
-
-.contact-form button:hover,
-.contact-form button:focus-visible{
-    background: #b78253;
-    transform: translateY(-1px);
-    box-shadow: 0 7px 16px rgba(0,0,0,0.12);
 }
 
 @media (max-width: 860px) {
