@@ -63,8 +63,8 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: center;
+    gap: 0;
+    align-items: stretch;
     min-height: 420px;
     margin-top: 40px;
     background: #f6f1ea;
@@ -73,14 +73,46 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     overflow: hidden;
 }
 
+.hero-image{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    mask-image: linear-gradient(to right, transparent 0%, black 30%);
+    mask-composite: intersect;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%);
+    -webkit-mask-composite: source-in;
+}
+
+.hero-media{
+    position: relative;
+    align-self: stretch;
+    margin-left: -120px;
+    margin-right: -32px;
+    margin-top: -32px;
+    margin-bottom: -32px;
+    z-index: 0;
+}
+
 .hero-text{
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
     text-align: center;
     max-width: 500px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
+    padding: 0;
+    background: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-radius: 0;
+    width: auto;
+    transform: none;
+    top: auto;
+    left: auto;
 }
 
 .hero-text-overlay{
@@ -113,29 +145,12 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     display: flex;
     gap: 14px;
     flex-wrap: wrap;
-}
-
-.hero-media{
-    min-height: 340px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 1;
 }
 
 .hero-text > *:not(.hero-text-overlay){
     position: relative;
     z-index: 1;
-}
-
-.hero-image-placeholder{
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.08));
 }
 
 .page-hero{
@@ -180,8 +195,12 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     filter: drop-shadow(0 10px 20px rgba(0,0,0,0.08));
 }
 
-.page-hero-image--sun{
-    width: min(100%, 260px);
+.visit-hero-image{
+    width: min(100%, 440px);
+    height: 320px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
 }
 
 .section-label{
@@ -202,14 +221,13 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 }
 
 .about-hero-card{
-    display: block;
-    min-height: 100%;
-    padding-right: 34px;
     margin-bottom: 56px;
+    min-height: 460px;
 }
 
 .about-hero-card .page-hero-copy{
     max-width: none;
+    align-self: center;
 }
 
 .about-body-copy{
@@ -230,17 +248,37 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 }
 
 .visit-notice{
-    max-width: 980px;
     display: grid;
-    grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.75fr);
+    grid-template-columns: minmax(0, 1fr) 320px;
     align-items: start;
     gap: 22px;
-    margin-top: 26px;
+    margin-top: 10px;
     margin-bottom: 56px;
 }
 
 .visit-notice-panel .btn{
     margin-top: 10px;
+}
+
+.visit-notice-panel{
+    position: relative;
+    overflow: hidden;
+}
+
+.visit-notice-accent{
+    position: absolute;
+    right: -18px;
+    bottom: -72px;
+    width: clamp(120px, 20vw, 185px);
+    height: auto;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.95;
+}
+
+.visit-notice-panel > *:not(.visit-notice-accent){
+    position: relative;
+    z-index: 1;
 }
 
 .visit-notice-panel,
@@ -263,17 +301,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 
 .visit-signup-form input{
     background: #ffffff;
-}
-
-.about-hero-accent{
-    position: absolute;
-    right: 6%;
-    bottom: -118px;
-    width: clamp(170px, 22vw, 240px);
-    height: auto;
-    opacity: 1;
-    pointer-events: none;
-    z-index: 0;
 }
 
 .info-panel{
@@ -779,8 +806,36 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 }
 
 @media (max-width: 860px) {
-    .hero{grid-template-columns: 1fr;}
-    .hero-media{min-height: 240px;}
+    .hero{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        min-height: 420px;
+        padding: 0;
+    }
+    .hero-media{
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0;
+        align-self: stretch;
+    }
+    .hero-image{
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+    .hero-text{
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        justify-self: center;
+        z-index: 2;
+        padding: 28px 32px;
+        background: rgba(246, 241, 234, 0.72);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        border-radius: 14px;
+        max-width: 85%;
+        margin: 0;
+    }
     .features{grid-template-columns: 1fr;}
     .page-hero-copy{text-align: center;}
     .page-hero-overlay{
@@ -790,20 +845,21 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     .visit-notice{
         grid-template-columns: 1fr;
     }
+    .visit-notice-accent{
+        width: clamp(98px, 24vw, 136px);
+        right: -12px;
+        bottom: -56px;
+    }
     .about-hero-card{
-        padding-right: 24px;
+        padding-right: 0;
     }
-    .about-hero-card .page-hero-copy,
-    .about-body-copy{
-        background: #f6f1ea;
-        box-shadow: 0 0 0 12px #f6f1ea;
+    .about-hero-card .page-hero-copy{
+        background: rgba(246, 241, 234, 0.82);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
         border-radius: 14px;
-    }
-    .about-hero-accent{
-        width: 150px;
-        right: 12px;
-        bottom: -70px;
-        opacity: 1;
+        padding: 24px;
+        box-shadow: none;
     }
     .apply-hero{grid-template-columns: 1fr;}
     .apply-hero-copy{text-align: center;}
@@ -1075,6 +1131,13 @@ textarea:focus-visible{
     .info-panel{
         padding: 20px 18px;
     }
+
+    .visit-notice-accent{
+        width: 92px;
+        right: -8px;
+        bottom: -42px;
+    }
+
 }
 
 footer {

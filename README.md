@@ -5,9 +5,9 @@ A static website for Clay & Cactus Market built with HTML and CSS.
 ## Project Structure
 
 - index.html: Home page
-- About.html: About page
-- Visit.html: Visit page
-- Apply.html: Vendor application page
+- about.html: About page
+- visit.html: Visit page
+- apply.html: Vendor application page
 - style.css: Shared site styles
 - main.js: Shared mobile navigation script
 - assets/: Images and fonts
@@ -30,7 +30,7 @@ Example using VS Code Live Server:
 - Main homepage content: index.html
 - Shared colors, typography, layout: style.css
 - Shared mobile menu behavior: main.js
-- Secondary page content: About.html, Visit.html, Apply.html
+- Secondary page content: about.html, visit.html, apply.html
 
 ## Deploy (Static Hosting)
 
