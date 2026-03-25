@@ -79,16 +79,16 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     display: block;
     object-fit: cover;
     object-position: center;
-    mask-image: linear-gradient(to right, transparent 0%, black 30%);
+    mask-image: linear-gradient(to right, transparent 0%, black 45%);
     mask-composite: intersect;
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 45%);
     -webkit-mask-composite: source-in;
 }
 
 .hero-media{
     position: relative;
     align-self: stretch;
-    margin-left: -120px;
+    margin-left: -50px;
     margin-right: -32px;
     margin-top: -32px;
     margin-bottom: -32px;
@@ -247,6 +247,23 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     margin-bottom: 0;
 }
 
+.about-photo-credit{
+    margin: 14px 0 0;
+    color: #6d7a85;
+    font-size: 0.82rem;
+    letter-spacing: 0.2px;
+}
+
+.about-photo-credit a{
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.about-photo-credit a:hover{
+    opacity: 0.82;
+}
+
 .visit-notice{
     display: grid;
     grid-template-columns: minmax(0, 1fr) 320px;
@@ -265,18 +282,7 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     overflow: hidden;
 }
 
-.visit-notice-accent{
-    position: absolute;
-    right: -18px;
-    bottom: -72px;
-    width: clamp(120px, 20vw, 185px);
-    height: auto;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.95;
-}
-
-.visit-notice-panel > *:not(.visit-notice-accent){
+.visit-notice-panel > *{
     position: relative;
     z-index: 1;
 }
@@ -720,12 +726,23 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 
 .feature-card--next{
     position: relative;
+    overflow: hidden;
+}
+
+.feature-card--next > h2,
+.feature-card--next > p,
+.feature-card--next > .feature-link{
+    position: relative;
+    z-index: 1;
 }
 
 .feature-card--next .feature-icon-right{
     position: absolute;
-    right: 16px;
-    bottom: 16px;
+    right: -54px;
+    bottom: -50px;
+    width: 208px;
+    opacity: 0.55;
+    z-index: 0;
 }
 
 .feature-icon-mail{
@@ -844,11 +861,6 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     }
     .visit-notice{
         grid-template-columns: 1fr;
-    }
-    .visit-notice-accent{
-        width: clamp(98px, 24vw, 136px);
-        right: -12px;
-        bottom: -56px;
     }
     .about-hero-card{
         padding-right: 0;
@@ -1132,12 +1144,6 @@ textarea:focus-visible{
         padding: 20px 18px;
     }
 
-    .visit-notice-accent{
-        width: 92px;
-        right: -8px;
-        bottom: -42px;
-    }
-
 }
 
 footer {
@@ -1150,6 +1156,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 12px;
 }
 
 .footer-link,
@@ -1164,10 +1171,35 @@ footer {
     opacity: 0.85;
 }
 
+.footer-photo-credit {
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    letter-spacing: 0.3px;
+    text-align: right;
+}
+
+.footer-photo-credit-link {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+.footer-photo-credit-link:hover {
+    opacity: 0.85;
+}
+
 @media (max-width: 640px) {
+    footer {
+        padding: 8px 0;
+    }
     .footer-content {
         flex-direction: column;
-        gap: 8px;
+        gap: 4px;
+        text-align: center;
+    }
+    .footer-photo-credit {
+        text-align: center;
+        font-size: 0.68rem;
     }
 }
 
