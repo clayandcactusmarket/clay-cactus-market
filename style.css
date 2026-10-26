@@ -653,8 +653,8 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 }
 
 .ceramics-card{
-    flex: 0 1 340px;
-    min-width: min(100%, 260px);
+    flex: 0 1 280px;
+    min-width: min(100%, 220px);
     background: #f1e7d9;
     border-radius: 14px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.04);
@@ -666,6 +666,19 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 .ceramics-card:focus-within{
     transform: translateY(-3px);
     box-shadow: 0 12px 24px rgba(72, 87, 102, 0.14);
+}
+
+@media (min-width: 700px){
+    .ceramics-card{
+        flex-basis: min(280px, calc((100% - 44px) / 3));
+        min-width: 0;
+    }
+}
+
+@media (min-width: 1000px){
+    .ceramics-card{
+        flex-basis: calc((100% - 66px) / 4);
+    }
 }
 
 .ceramics-card__button{
@@ -713,7 +726,7 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 
 .ceramics-card__name{
     color: #485766;
-    font-size: 1.35rem;
+    font-size: 1.15rem;
     line-height: 1.1;
 }
 
