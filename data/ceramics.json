@@ -40,6 +40,45 @@
       "tags": ["ceramic bowl", "trinket dish", "ring dish", "handmade gift", "frozen pond glaze", "handmade pottery"],
       "etsyUrl": "https://www.etsy.com/listing/4603084602/frozen-pond-bowl",
       "available": true
+    },
+    {
+      "id": "4603074558",
+      "name": "Floral Tray",
+      "price": 45,
+      "currency": "USD",
+      "image": "assets/ceramics/JP-003.jpg.jpg",
+      "imageAlt": "Handmade ceramic jewelry tray with sgraffito flowers",
+      "description": "Handmade ceramic floral tray with sgraffito flowers, ideal for jewelry and small keepsakes.",
+      "seoDescription": "Handmade ceramic jewelry tray decorated with sgraffito flowers. A one-of-a-kind floral tray by Jaymi.",
+      "tags": ["ceramic tray", "jewelry tray", "floral tray", "sgraffito flowers", "handmade pottery", "handmade gift"],
+      "etsyUrl": "https://www.etsy.com/listing/4603074558/floral-tray-handmade-ceramic-jewelry",
+      "available": true
+    },
+    {
+      "id": "4603051817",
+      "name": "Small Frozen Pond Ceramic Tray",
+      "price": 48,
+      "currency": "USD",
+      "image": "assets/ceramics/jp004.jpg",
+      "imageAlt": "Small handmade blue frozen pond ceramic tray, a jewelry catchall",
+      "description": "Handmade blue ceramic jewelry catchall with a frozen-pond inspired glaze. A small tray for rings, earrings, and keepsakes.",
+      "seoDescription": "Small handmade ceramic tray with a blue frozen-pond glaze, made as a jewelry catchall and one-of-a-kind handmade gift.",
+      "tags": ["ceramic tray", "jewelry catchall", "frozen pond glaze", "blue ceramic", "handmade gift", "handmade pottery"],
+      "etsyUrl": "https://www.etsy.com/listing/4603051817/small-frozen-pond-ceramic-tray-handmade",
+      "available": true
+    },
+    {
+      "id": "4603075624",
+      "name": "Stamped Ceramic Tray",
+      "price": 32,
+      "currency": "USD",
+      "image": "assets/ceramics/jp005.jpg",
+      "imageAlt": "Handmade stamped ceramic jewelry dish with a toasted sage glaze",
+      "description": "Handmade stamped ceramic jewelry dish with a toasted sage glaze. A small tray for rings, earrings, and keepsakes.",
+      "seoDescription": "Handmade stamped ceramic tray and jewelry dish with a toasted sage glaze, made as a one-of-a-kind handmade gift.",
+      "tags": ["ceramic tray", "jewelry dish", "stamped pottery", "sage green ceramic", "handmade gift", "handmade pottery"],
+      "etsyUrl": "https://www.etsy.com/listing/4603075624/stamped-ceramic-tray-handmade-toasted",
+      "available": true
     }
   ]
 }
