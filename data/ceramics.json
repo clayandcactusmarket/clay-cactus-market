@@ -1,0 +1,45 @@
+{
+  "collection": "Ceramics by Jaymi",
+  "shopUrl": "https://www.etsy.com/shop/ClayAndCactusMarket",
+  "products": [
+    {
+      "id": "4603079828",
+      "name": "Small Handmade Ceramic Pot - Carved Botanical Design",
+      "price": 48,
+      "currency": "USD",
+      "image": "assets/ceramics/jp-032.jpg",
+      "imageAlt": "Small handmade blue ceramic pot with a carved botanical design, filled with decorative beads",
+      "description": "Materials: Ceramic. Width: 4 inches. Height: 3 1/4 inches. Weight: 19.37 oz.",
+      "seoDescription": "Handmade ceramic pot with a carved botanical design, finished in layered blue glaze and sized for shelf styling or small keepsakes.",
+      "tags": ["handmade ceramic pot", "carved pottery", "blue glaze decor", "artist made"],
+      "etsyUrl": "https://www.etsy.com/listing/4603079828/small-handmade-ceramic-pot-carved",
+      "available": true
+    },
+    {
+      "id": "4603040123",
+      "name": "Large Catch-All Tray",
+      "price": 65,
+      "currency": "USD",
+      "image": "assets/ceramics/jp-001.jpg",
+      "imageAlt": "Large handmade ceramic catch-all tray with a frozen pond inspired glaze pattern",
+      "description": "Large handmade ceramic catch-all tray with a layered, icy glaze finish for jewelry, keys, or keepsakes.",
+      "seoDescription": "Large handmade ceramic tray designed as a catch-all dish, finished with a cool-toned crystalline glaze.",
+      "tags": ["ceramic tray", "catch all tray", "handmade pottery decor", "jewelry dish"],
+      "etsyUrl": "https://www.etsy.com/listing/4603040123/large-catch-all-tray",
+      "available": true
+    },
+    {
+      "id": "4603084602",
+      "name": "Frozen Pond Bowl",
+      "price": 45,
+      "currency": "USD",
+      "image": "assets/ceramics/jp-013.jpg",
+      "imageAlt": "Handmade ceramic frozen pond bowl with textured blue and cream glaze",
+      "description": "Handmade ceramic bowl with a frozen-pond inspired glaze and textured surface, ideal for display or small everyday use.",
+      "seoDescription": "Handmade ceramic bowl with blue and cream frozen-pond glaze detail, made as one-of-a-kind functional art.",
+      "tags": ["ceramic bowl", "frozen pond glaze", "handmade pottery", "artisan home decor"],
+      "etsyUrl": "https://www.etsy.com/listing/4603084602/frozen-pond-bowl",
+      "available": true
+    }
+  ]
+}

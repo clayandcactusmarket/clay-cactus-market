@@ -8,6 +8,10 @@ A static website for Clay & Cactus Market built with HTML and CSS.
 - about.html: About page
 - visit.html: Visit page
 - apply.html: Vendor application page
+- ceramics.html: Ceramics by Jaymi page
+- data/ceramics.json: Ceramics product list (edit this to add, remove, or change listings)
+- ceramics.js: Builds the ceramics grid and detail view from ceramics.json
+- assets/ceramics/: Product photos
 - style.css: Shared site styles
 - main.js: Shared mobile navigation script
 - assets/: Images and fonts
@@ -31,6 +35,26 @@ Example using VS Code Live Server:
 - Shared colors, typography, layout: style.css
 - Shared mobile menu behavior: main.js
 - Secondary page content: about.html, visit.html, apply.html
+
+## Manage Ceramics Listings
+
+1. Add the product photo to assets/ceramics/
+2. Add an entry to the products list in data/ceramics.json (id, name, price, currency, image, imageAlt, description, seoDescription, tags, etsyUrl, available)
+3. Set "available": false to show a Sold badge and hide the Buy button
+
+The ceramics page loads the JSON with fetch, so test it with Live Server rather than opening the file directly. A future Etsy sync can simply regenerate data/ceramics.json in the same format.
+The page also creates schema.org structured data (CollectionPage + ItemList + Product + Offer) from this JSON to support search indexing.
+
+## Google Indexing Checklist
+
+1. Deploy the latest files (`ceramics.html`, `ceramics.js`, `data/ceramics.json`, `sitemap.xml`)
+2. In Google Search Console, submit:
+   - `https://clayandcactusmarket.com/sitemap.xml`
+   - `https://clayandcactusmarket.com/ceramics.html` via URL Inspection > Request Indexing
+3. Verify the page is crawlable:
+   - `robots.txt` allows crawling
+   - canonical points to `https://clayandcactusmarket.com/ceramics.html`
+4. Re-submit indexing whenever products or product text is updated significantly
 
 ## Deploy (Static Hosting)
 

@@ -617,6 +617,227 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     margin-bottom: 16px;
 }
 
+.ceramics{
+    margin-top: 44px;
+    margin-bottom: 24px;
+}
+
+.ceramics__heading{
+    margin: 0 0 22px;
+    text-align: center;
+    color: #485766;
+    font-size: clamp(2.1rem, 4vw, 3.4rem);
+    line-height: 1;
+}
+
+.ceramics__status{
+    text-align: center;
+    color: #5e6f79;
+    margin: 0 0 20px;
+}
+
+.ceramics__status a{
+    color: #485766;
+    text-decoration-color: #c18c5d;
+    text-underline-offset: 3px;
+}
+
+.ceramics-grid{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+}
+
+.ceramics-card{
+    flex: 0 1 340px;
+    min-width: min(100%, 260px);
+    background: #f1e7d9;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ceramics-card:hover,
+.ceramics-card:focus-within{
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(72, 87, 102, 0.14);
+}
+
+.ceramics-card__button{
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    color: inherit;
+}
+
+.ceramics-card__media{
+    position: relative;
+    display: block;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background: #f6f1ea;
+}
+
+.ceramics-card__media img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ceramics-card__badge{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 12px;
+    border-radius: 24px;
+    background: #485766;
+    color: #f1e7d9;
+    font-size: 0.95rem;
+}
+
+.ceramics-card__body{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px 18px 20px;
+}
+
+.ceramics-card__name{
+    color: #485766;
+    font-size: 1.35rem;
+    line-height: 1.1;
+}
+
+.ceramics-card__price{
+    color: #c18c5d;
+    font-size: 1.2rem;
+}
+
+body.modal-open{
+    overflow: hidden;
+}
+
+.ceramics-modal[hidden]{
+    display: none;
+}
+
+.ceramics-modal{
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ceramics-modal__backdrop{
+    position: absolute;
+    inset: 0;
+    background: rgba(72, 87, 102, 0.6);
+}
+
+.ceramics-modal__panel{
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    width: 100%;
+    max-width: 860px;
+    max-height: 90vh;
+    overflow: auto;
+    background: #fdfbf9;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+.ceramics-modal__image{
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+}
+
+.ceramics-modal__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 32px 30px;
+    background: #f4e9dd;
+}
+
+.ceramics-modal__info h2{
+    margin: 0 0 8px;
+    color: #485766;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1;
+}
+
+.ceramics-modal__price{
+    margin: 0 0 14px;
+    color: #c18c5d;
+    font-size: 1.6rem;
+}
+
+.ceramics-modal__description{
+    margin: 0 0 22px;
+    color: #5e6f79;
+    text-transform: none;
+    letter-spacing: 0.3px;
+}
+
+.ceramics-modal__close{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    z-index: 2;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(253, 251, 249, 0.9);
+    color: #485766;
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.ceramics-modal__close:hover{
+    background: #ffffff;
+    color: #ce796a;
+}
+
+.home-collection-note{
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.home-collection-note p{
+    margin: 0;
+    text-align: center;
+    color: #5e6f79;
+}
+
+.inline-link{
+    color: #485766;
+    text-decoration-color: #c18c5d;
+    text-underline-offset: 3px;
+    font-weight: 700;
+}
+
+.inline-link:hover{
+    color: #ce796a;
+}
+
 .feature-card{
     border: none;
     border-radius: 14px;
@@ -854,6 +1075,8 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
         margin: 0;
     }
     .features{grid-template-columns: 1fr;}
+    .ceramics-modal__panel{grid-template-columns: 1fr;}
+    .ceramics-modal__image{min-height: 0; max-height: 320px;}
     .page-hero-copy{text-align: center;}
     .page-hero-overlay{
         left: 50%;
@@ -1202,5 +1425,3 @@ footer {
         font-size: 0.68rem;
     }
 }
-
-
