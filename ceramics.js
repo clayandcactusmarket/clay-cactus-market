@@ -10,6 +10,8 @@
     var modalPrice = document.getElementById('ceramics-modal-price');
     var modalDesc = document.getElementById('ceramics-modal-description');
     var modalLink = document.getElementById('ceramics-modal-link');
+    var modalSoldNote = document.getElementById('ceramics-modal-sold-note');
+    var modalCustomLink = document.getElementById('ceramics-modal-custom-link');
     var lastFocus = null;
 
     function formatPrice(product) {
@@ -44,6 +46,8 @@
         modalDesc.hidden = !product.description;
         modalLink.href = safeUrl(product.etsyUrl);
         modalLink.hidden = product.available === false;
+        modalSoldNote.hidden = product.available !== false;
+        modalCustomLink.hidden = product.available !== false;
         modal.hidden = false;
         document.body.classList.add('modal-open');
         modal.querySelector('.ceramics-modal__close').focus();
