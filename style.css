@@ -649,6 +649,19 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     text-underline-offset: 3px;
 }
 
+.ceramics__intro{
+    max-width: 720px;
+    margin: 0 auto 20px;
+    text-align: center;
+    color: #5e6f79;
+}
+
+.ceramics__intro a{
+    color: #485766;
+    text-decoration-color: #c18c5d;
+    text-underline-offset: 3px;
+}
+
 .ceramics-grid{
     list-style: none;
     margin: 0;

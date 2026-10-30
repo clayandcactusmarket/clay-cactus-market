@@ -9,8 +9,9 @@ A static website for Clay & Cactus Market built with HTML and CSS.
 - visit.html: Visit page
 - apply.html: Vendor application page
 - ceramics.html: Ceramics by Jaymi page
-- data/ceramics.json: Ceramics product list (edit this to add, remove, or change listings)
-- ceramics.js: Builds the ceramics grid and detail view from ceramics.json
+- data/ceramics.json: Ceramics product list (single source of truth - edit this to add, remove, or change listings)
+- build-ceramics.ps1: Regenerates the pre-rendered product grid in ceramics.html from ceramics.json
+- ceramics.js: Adds the detail-view modal to the pre-rendered ceramics grid
 - assets/ceramics/: Product photos
 - style.css: Shared site styles
 - main.js: Shared mobile navigation script
@@ -41,13 +42,15 @@ Example using VS Code Live Server:
 1. Add the product photo to assets/ceramics/
 2. Add an entry to the products list in data/ceramics.json (id, name, price, currency, image, imageAlt, description, seoDescription, tags, etsyUrl, available)
 3. Set "available": false to show a Sold badge and hide the Buy button
+4. Run `.\build-ceramics.ps1` to regenerate the product grid in ceramics.html, then publish the updated files
 
-The ceramics page loads the JSON with fetch, so test it with Live Server rather than opening the file directly. A future Etsy sync can simply regenerate data/ceramics.json in the same format.
-The page also creates schema.org structured data (CollectionPage + ItemList + Product + Offer) from this JSON to support search indexing.
+The product cards are pre-rendered into ceramics.html so search engines can read every name, description, image alt text, and Etsy link without running JavaScript. The section between the `CERAMICS:BEGIN-GENERATED` and `CERAMICS:END-GENERATED` markers is generated - never edit it by hand; always edit data/ceramics.json and re-run the script. ceramics.js only powers the detail-view modal, using a copy of the product data embedded in the page by the generator.
+
+The generated section also includes schema.org structured data (CollectionPage + ItemList + Product + Offer) built from the same JSON to support search indexing. A future Etsy sync can simply regenerate data/ceramics.json in the same format and re-run the script.
 
 ## Google Indexing Checklist
 
-1. Deploy the latest files (`ceramics.html`, `ceramics.js`, `data/ceramics.json`, `sitemap.xml`)
+1. Deploy the latest files (`ceramics.html`, `ceramics.js`, `data/ceramics.json`, `sitemap.xml`) after running `.\build-ceramics.ps1`
 2. In Google Search Console, submit:
    - `https://clayandcactusmarket.com/sitemap.xml`
    - `https://clayandcactusmarket.com/ceramics.html` via URL Inspection > Request Indexing
