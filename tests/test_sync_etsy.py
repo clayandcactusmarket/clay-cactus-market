@@ -54,6 +54,24 @@ class SyncTests(unittest.TestCase):
     def test_empty_shop(self):
         self.assertEqual(fetch_listings(self.api(total=0))["products"], [])
 
+    def test_sold_archive_and_restock(self):
+        base = self.api(total=1)
+        def api(path, **params):
+            if path == 'shops/42/listings':
+                self.assertEqual(params['state'], 'sold_out')
+                sold = listing(2)
+                sold.update(state='sold_out', quantity=0)
+                return {'count': 1, 'results': [sold]}
+            return base(path, **params)
+        old = convert_listing(dict(listing(3), state='sold_out'), IMAGES)
+        restocked = convert_listing(dict(listing(1), state='sold_out'), IMAGES)
+        withdrawn = convert_listing(listing(4), IMAGES)
+        products = fetch_listings(api, include_sold=True,
+            previous={'products': [old, restocked, withdrawn]})['products']
+        self.assertEqual([p['id'] for p in products], ['1', '3', '2'])
+        self.assertTrue(products[0]['available'])
+        self.assertTrue(all(not p['available'] for p in products[1:]))
+
     def test_incomplete_fetch_aborts(self):
         for failure in ("duplicate", "incomplete", "changed", "images"):
             with self.subTest(failure=failure), self.assertRaises(ValueError):

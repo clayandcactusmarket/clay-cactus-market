@@ -22,12 +22,14 @@ class GenerationTests(unittest.TestCase):
             product = {'id': '123', 'name': '<Cup> & bowl', 'price': 12.50,
                        'currency': 'USD', 'image': 'https://i.etsystatic.com/photo.jpg',
                        'description': '</script><script>alert(1)</script>',
-                       'etsyUrl': 'https://www.etsy.com/listing/123', 'available': True}
+                       'etsyUrl': 'https://www.etsy.com/listing/123', 'available': False}
             (root / 'data/ceramics.json').write_text(json.dumps({'products': [product]}))
             subprocess.run([PWSH, '-NoProfile', '-File', str(root / 'build-ceramics.ps1')],
                            check=True, capture_output=True)
             page = (root / 'ceramics.html').read_text()
             self.assertIn('&lt;Cup&gt; &amp; bowl', page)
+            self.assertIn('ceramics-card__badge">Sold</span>', page)
+            self.assertIn('href="/#contact" hidden>Request a Custom Order</a>', page)
             self.assertNotIn(product['description'], page)
             modal = re.search(r'id="ceramics-data">(.*?)</script>', page, re.S).group(1)
             self.assertEqual(json.loads(modal)['products'][0]['description'], product['description'])
