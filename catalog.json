@@ -1,4 +1,30 @@
 {
+  "sections": [
+    {
+      "id": "61198255",
+      "name": "Bowls & Pinch Pots"
+    },
+    {
+      "id": "61198257",
+      "name": "Plates & Serving Dishes"
+    },
+    {
+      "id": "61198261",
+      "name": "Trinket Dishes & Trays"
+    },
+    {
+      "id": "61198263",
+      "name": "Cups & Tumblers"
+    },
+    {
+      "id": "61198265",
+      "name": "Jars & Vessels"
+    },
+    {
+      "id": "61182396",
+      "name": "Planters & Home Decor"
+    }
+  ],
   "collection": "Ceramics by Jaymi",
   "shopUrl": "https://www.etsy.com/shop/ClayAndCactusMarket",
   "products": [
@@ -27,6 +53,8 @@
         "unique ceramic gift"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603080184",
+      "sectionId": "61198265",
+      "listedAt": 1793330011,
       "state": "active",
       "available": true
     },
@@ -55,6 +83,8 @@
         "handmade trinket"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603080560",
+      "sectionId": "61198261",
+      "listedAt": 1793329970,
       "state": "active",
       "available": true
     },
@@ -83,6 +113,8 @@
         "hand carved ceramics"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603082310",
+      "sectionId": "61198261",
+      "listedAt": 1793329942,
       "state": "active",
       "available": true
     },
@@ -111,6 +143,8 @@
         "unique ceramic gift"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603081194",
+      "sectionId": "61198265",
+      "listedAt": 1793329884,
       "state": "active",
       "available": true
     },
@@ -139,6 +173,8 @@
         "handmade trinket"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603081050",
+      "sectionId": "61198255",
+      "listedAt": 1793329806,
       "state": "active",
       "available": true
     },
@@ -167,6 +203,8 @@
         "ceramic trinket tray"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603082122",
+      "sectionId": "61198261",
+      "listedAt": 1793329771,
       "state": "active",
       "available": true
     },
@@ -195,6 +233,8 @@
         "ceramic trinket tray"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603057497",
+      "sectionId": "61198257",
+      "listedAt": 1793329718,
       "state": "active",
       "available": true
     },
@@ -223,6 +263,8 @@
         "unique ceramic gift"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603056979",
+      "sectionId": "61198261",
+      "listedAt": 1793329695,
       "state": "active",
       "available": true
     },
@@ -251,6 +293,8 @@
         "unique ceramic gift"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603080014",
+      "sectionId": "61198265",
+      "listedAt": 1793329672,
       "state": "active",
       "available": true
     },
@@ -276,6 +320,8 @@
         "one of a kind"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603059223",
+      "sectionId": "61198261",
+      "listedAt": 1793329649,
       "state": "active",
       "available": true
     },
@@ -290,6 +336,8 @@
       "seoDescription": "I carved this sweet little planter to look like a flower, and I absolutely love how cute it turned out! The carved details give it a playful, floral shape, and there is a drainage hole in the bottom. It is a lovely size for a small succulent or another tiny plant.\n\nCare & Details\n- Handbuilt ceramic planter\n- Hand-carved floral design\n- Drainage hole in bottom\n- Nontoxic glaze\n\nThe piece photographed is the exact piece you will receive. Because each piece is handbuilt, small variations and quirks, including slight unevenness in the foot or surface, are part of its handmade character. If you have any concerns about the quality of your piece when it arrives, please contact me so we can work together on a return.\n\nDimensions: 3½\" × 3½\" × 2¼\"",
       "tags": [],
       "etsyUrl": "https://www.etsy.com/listing/4605285327",
+      "sectionId": "61182396",
+      "listedAt": 1793328118,
       "state": "active",
       "available": true
     },
@@ -304,6 +352,8 @@
       "seoDescription": "I made this dainty little dish from a slab of porcelain, carving a design into the surface and filling it with Mason-stained clay. Unfortunately, the color burned out during firing, so I finished it with a beautiful Supernova crystalline glaze instead.\n\nI love the soft blue and creamy yellow tones that developed. It’s the perfect size for a bar of soap, but would also make a lovely little trinket dish for jewelry or other small treasures.\n\nCare & Details\n- Handmade from porcelain slab\n- Carved design with Mason-stained clay inlay\n- Supernova crystalline glaze\n- Nontoxic glaze\n\nThe photos show the actual piece you'll receive. Because each piece is handmade, small quirks and imperfections are part of its character, including slight variations in shape or a foot that isn't perfectly flat. If you have a concern about the quality of your piece, please reach out. I'm happy to work with you to arrange a return.\n\nDimensions: 4¾\" × 3¼\" × ⅞\"",
       "tags": [],
       "etsyUrl": "https://www.etsy.com/listing/4605303766",
+      "sectionId": "61198261",
+      "listedAt": 1793328086,
       "state": "active",
       "available": true
     },
@@ -332,6 +382,8 @@
         "sculptural pottery"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605301580",
+      "sectionId": "61182396",
+      "listedAt": 1793328006,
       "state": "active",
       "available": true
     },
@@ -360,6 +412,8 @@
         "handbuilt pottery"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605283041",
+      "sectionId": "61182396",
+      "listedAt": 1793327949,
       "state": "active",
       "available": true
     },
@@ -388,6 +442,8 @@
         "carved mandala"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605283817",
+      "sectionId": "61198261",
+      "listedAt": 1793327845,
       "state": "active",
       "available": true
     },
@@ -416,6 +472,8 @@
         "small pottery dish"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605303248",
+      "sectionId": "61198261",
+      "listedAt": 1793327845,
       "state": "active",
       "available": true
     },
@@ -444,6 +502,8 @@
         "one of a kind gift"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605302758",
+      "sectionId": "61198255",
+      "listedAt": 1793327845,
       "state": "active",
       "available": true
     },
@@ -458,6 +518,8 @@
       "seoDescription": "This little ceramic dish has a rustic, slightly rough finish with an eye design carved into the surface using sgraffito. I love the contrast between the dark background and the exposed clay, especially with all the little carved details surrounding the eye.\n\nIt’s almost coaster-sized, making it a fun little spot for jewelry, keys, or other small treasures. I finished the bottom with a dark brown engobe to complement the design.\n\nCare & Details\n- Handmade ceramic\n- Hand-carved sgraffito eye design\n- Rustic, textured finish\n- Dark brown engobe on bottom\n- Nontoxic glaze\n\nThe photos show the actual piece you'll receive. Because each piece is handmade, small quirks and imperfections are part of its character, including slight variations in shape or a foot that isn't perfectly flat. If you have a concern about the quality of your piece, please reach out. I'm happy to work with you to arrange a return.",
       "tags": [],
       "etsyUrl": "https://www.etsy.com/listing/4605284615",
+      "sectionId": "61198261",
+      "listedAt": 1793327845,
       "state": "active",
       "available": true
     },
@@ -472,6 +534,8 @@
       "seoDescription": "This larger handmade ceramic bowl has a wide, flared shape that makes it a beautiful decorative piece. I gave it a smaller foot underneath, creating a lovely contrast with the broad opening.\n\nI originally experimented with a Mason-stained design, but the glaze ended up overpowering the color during firing. The underside developed an unexpected rustic finish, with patches of earthy brown and muted blue-gray. It wasn’t quite what I envisioned, but the more I look at it, the more I love its weathered character.\n\nI think this would make a beautiful centerpiece on a table or a decorative bowl displayed on a shelf.\n\nCare & Details\n- Handmade ceramic bowl\n- Wide, flared shape with a smaller foot\n- Mason-stained design beneath the glaze\n- Rustic blue-gray and brown glaze variation\n- Nontoxic glaze\n\nThe photos show the actual piece you'll receive. Because each piece is handmade, small quirks and imperfections are part of its character, including slight variations in shape or a foot that isn't perfectly flat. If you have a concern about the quality of your piece, please reach out. I'm happy to work with you to arrange a return.\n\nDimensions: 8\" × 8\" × 1¾\"",
       "tags": [],
       "etsyUrl": "https://www.etsy.com/listing/4605304510",
+      "sectionId": "61198255",
+      "listedAt": 1793327845,
       "state": "active",
       "available": true
     },
@@ -500,6 +564,8 @@
         "ceramic catchall"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605303008",
+      "sectionId": "61198255",
+      "listedAt": 1793327845,
       "state": "active",
       "available": true
     },
@@ -528,6 +594,8 @@
         "small ceramic bowl"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605303118",
+      "sectionId": "61198255",
+      "listedAt": 1793327845,
       "state": "active",
       "available": true
     },
@@ -556,6 +624,8 @@
         "one of a kind bowl"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605282771",
+      "sectionId": "61198255",
+      "listedAt": 1793327764,
       "state": "active",
       "available": true
     },
@@ -584,6 +654,8 @@
         "ceramic bowl"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605282677",
+      "sectionId": "61198255",
+      "listedAt": 1793323820,
       "state": "active",
       "available": true
     },
@@ -612,6 +684,8 @@
         "ceramic trinket dish"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605303578",
+      "sectionId": "61198261",
+      "listedAt": 1793323751,
       "state": "active",
       "available": true
     },
@@ -640,6 +714,8 @@
         "sculptural pottery"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605283357",
+      "sectionId": "61198265",
+      "listedAt": 1793323689,
       "state": "active",
       "available": true
     },
@@ -668,6 +744,8 @@
         "one of a kind"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605282407",
+      "sectionId": "61198261",
+      "listedAt": 1793323601,
       "state": "active",
       "available": true
     },
@@ -682,6 +760,8 @@
       "seoDescription": "I love this pinch pot so much! I carved deep lines around the outside to give the surface a bold, tactile texture. The carved details are what make this little piece special.\n\nCare & Details\n- Handbuilt ceramic pinch pot\n- Deep hand-carved exterior\n- Nontoxic glaze\n\nThe piece photographed is the exact piece you will receive. Because each piece is handbuilt, small variations and quirks, including slight unevenness in the foot or surface, are part of its handmade character. If you have any concerns about the quality of your piece when it arrives, please contact me so we can work together on a return.",
       "tags": [],
       "etsyUrl": "https://www.etsy.com/listing/4605304634",
+      "sectionId": "61198265",
+      "listedAt": 1793323538,
       "state": "active",
       "available": true
     },
@@ -710,6 +790,8 @@
         "carved ceramic dish"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605302046",
+      "sectionId": "61198261",
+      "listedAt": 1793323445,
       "state": "active",
       "available": true
     },
@@ -738,6 +820,8 @@
         "ceramic tumbler"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605302504",
+      "sectionId": "61198263",
+      "listedAt": 1793323408,
       "state": "active",
       "available": true
     },
@@ -752,6 +836,8 @@
       "seoDescription": "This sweet little ceramic dish has softly scalloped edges and a floral design I carved into the center. I kept the shape simple and left it without a foot, giving it a lovely low profile.\n\nIt’s just the right size for a facial cleansing bar or a small round soap. I especially love how the glaze settles into the carved flower, bringing out all those little details.\n\nCare & Details\n- Handmade ceramic\n- Hand-carved floral design\n- Scalloped edges\n- Footless design\n- Nontoxic glaze\n\nThe photos show the actual piece you'll receive. Because each piece is handmade, small quirks and imperfections are part of its character, including slight variations in shape or a foot that isn't perfectly flat. If you have a concern about the quality of your piece, please reach out. I'm happy to work with you to arrange a return.",
       "tags": [],
       "etsyUrl": "https://www.etsy.com/listing/4605304124",
+      "sectionId": "61198261",
+      "listedAt": 1793323085,
       "state": "active",
       "available": true
     },
@@ -766,6 +852,8 @@
       "seoDescription": "I made this little pinch pot and carved a foot directly into the bottom, adding a small floral design around it. I also carved hearts around the outside and finished the inside with a soft green glaze. I love all the little details on this one!\n\nCare & Details\n- Handbuilt ceramic pinch pot\n- Carved foot with floral detailing\n- Hand-carved hearts\n- Green glazed interior\n- Nontoxic glaze\n\nThe piece photographed is the exact piece you will receive. Because each piece is handbuilt, small variations and quirks, including slight unevenness in the foot or surface, are part of its handmade character. If you have any concerns about the quality of your piece when it arrives, please contact me so we can work together on a return.",
       "tags": [],
       "etsyUrl": "https://www.etsy.com/listing/4605304758",
+      "sectionId": "61198255",
+      "listedAt": 1793323038,
       "state": "active",
       "available": true
     },
@@ -780,6 +868,8 @@
       "seoDescription": "This beautiful bowl is honestly one of my favorites! I used a gorgeous pink glaze that developed warm coral tones with blue-green accents between the patches of color. I love how much character the glaze gives this otherwise simple shape.\n\nIt’s a lovely bowl for everyday meals, snacks, or ice cream, and the colorful glaze really makes it special.\n\nCare & Details\n- Handmade ceramic bowl\n- Pink glaze with blue-green accents\n- Nontoxic glaze\n- Dinnerware safe\n\nThe photos show the actual piece you'll receive. Because each piece is handmade, small quirks and imperfections are part of its character, including slight variations in shape or a foot that isn't perfectly flat. If you have a concern about the quality of your piece, please reach out. I'm happy to work with you to arrange a return.",
       "tags": [],
       "etsyUrl": "https://www.etsy.com/listing/4605284741",
+      "sectionId": "61198255",
+      "listedAt": 1793322973,
       "state": "active",
       "available": true
     },
@@ -808,6 +898,8 @@
         "glaze art"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605301756",
+      "sectionId": "61198255",
+      "listedAt": 1793322922,
       "state": "active",
       "available": true
     },
@@ -822,6 +914,8 @@
       "seoDescription": "This cute little ashtray was made from a slab of clay that I pinched into shape, giving it a softly irregular form. I added a small debowler in the center and finished the piece with my Frozen Pond glaze.\n\nI love how the blue pools and earthy tones developed across the surface. It’s such a sweet little piece, with a practical purpose and plenty of character.\n\nCare & Details\n- Handmade slab-built ceramic\n- Pinched into shape\n- Built-in ceramic debowler\n- Frozen Pond glaze\n- Nontoxic glaze\n\nThe photos show the actual piece you'll receive. Because each piece is handmade, small quirks and imperfections are part of its character, including slight variations in shape or a foot that isn't perfectly flat. If you have a concern about the quality of your piece, please reach out. I'm happy to work with you to arrange a return.",
       "tags": [],
       "etsyUrl": "https://www.etsy.com/listing/4605284347",
+      "sectionId": "61182396",
+      "listedAt": 1793322864,
       "state": "active",
       "available": true
     },
@@ -850,6 +944,8 @@
         "one of a kind"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4605280617",
+      "sectionId": "61198265",
+      "listedAt": 1793293300,
       "state": "active",
       "available": true
     },
@@ -864,6 +960,8 @@
       "seoDescription": "This little pinch pot features deep carvings around the outside and one of my favorite glazes. I love how the glaze developed over the textured surface, bringing out the details of the carving. I finished the bottom with dark engobe, giving it an earthy contrast against the glaze. It is a sweet little bowl for rings or small treasures.\n\nCare & Details\n- Handbuilt ceramic pinch pot\n- Hand-carved exterior\n- Dark engobe on bottom\n- Nontoxic glaze\n\nThe piece photographed is the exact piece you will receive. Because each piece is handbuilt, small variations and quirks, including slight unevenness in the foot or surface, are part of its handmade character. If you have any concerns about the quality of your piece when it arrives, please contact me so we can work together on a return.\n\nDimensions: 3¼\" × 3¼\" × 2¼\"",
       "tags": [],
       "etsyUrl": "https://www.etsy.com/listing/4605285457",
+      "sectionId": "61198255",
+      "listedAt": 1793293205,
       "state": "active",
       "available": true
     },
@@ -878,6 +976,8 @@
       "seoDescription": "I carved this little pinch pot with a design that falls somewhere between a mandala and botanical motifs. I love how the shapes come together around the outside, giving the piece so much detail and texture. It is a lovely little bowl for jewelry, small treasures, or everyday odds and ends.\n\nCare & Details\n- Handbuilt ceramic pinch pot\n- Hand-carved mandala and botanical-inspired design\n- Nontoxic glaze\n- Dinnerware safe\n\nThe piece photographed is the exact piece you will receive. Because each piece is handbuilt, small variations and quirks, including slight unevenness in the foot or surface, are part of its handmade character. If you have any concerns about the quality of your piece when it arrives, please contact me so we can work together on a return.",
       "tags": [],
       "etsyUrl": "https://www.etsy.com/listing/4605285587",
+      "sectionId": "61198255",
+      "listedAt": 1793293167,
       "state": "active",
       "available": true
     },
@@ -892,6 +992,8 @@
       "seoDescription": "This is one of those pieces where I really love how everything came together! I made this bowl using the pinch pot technique, carving deep lines along the outside and an eye design into the center of the interior. The gorgeous earthy green glaze settles into the carvings, bringing out the little details. I especially love the contrast between the textured exterior and the eye hidden inside. I recommend it for jewelry, trinkets, or decorative display rather than food.\n\nCare & Details\n- Handbuilt ceramic pinch pot bowl\n- Deep hand-carved exterior\n- Hand-carved eye design inside\n- Earthy green glaze\n- Nontoxic glaze\n- Decorative use only; not recommended for food\n\nThe piece photographed is the exact piece you will receive. Because each piece is handbuilt, small variations and quirks, including slight unevenness in the foot or surface, are part of its handmade character. If you have any concerns about the quality of your piece when it arrives, please contact me so we can work together on a return.\n\nDimensions: 5½\" × 5½\" × 2½\"",
       "tags": [],
       "etsyUrl": "https://www.etsy.com/listing/4605285753",
+      "sectionId": "61198255",
+      "listedAt": 1793293124,
       "state": "active",
       "available": true
     },
@@ -917,6 +1019,8 @@
         "artisan pottery"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603082666",
+      "sectionId": "61198261",
+      "listedAt": 1793059350,
       "state": "active",
       "available": true
     },
@@ -945,6 +1049,8 @@
         "ceramic condiment"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603078204",
+      "sectionId": "61198255",
+      "listedAt": 1793059261,
       "state": "active",
       "available": true
     },
@@ -973,6 +1079,8 @@
         "handmade trinket"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603077874",
+      "sectionId": "61198255",
+      "listedAt": 1793059196,
       "state": "active",
       "available": true
     },
@@ -1001,6 +1109,8 @@
         "handmade trinket"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603078016",
+      "sectionId": "61198255",
+      "listedAt": 1793059112,
       "state": "active",
       "available": true
     },
@@ -1029,6 +1139,8 @@
         "handmade trinket"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603055095",
+      "sectionId": "61198255",
+      "listedAt": 1793059081,
       "state": "active",
       "available": true
     },
@@ -1057,6 +1169,8 @@
         "unique ceramic gift"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603078622",
+      "sectionId": "61198265",
+      "listedAt": 1793058413,
       "state": "active",
       "available": true
     },
@@ -1085,6 +1199,8 @@
         "unique ceramic gift"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603078814",
+      "sectionId": "61198265",
+      "listedAt": 1793058303,
       "state": "active",
       "available": true
     },
@@ -1113,6 +1229,8 @@
         "unique ceramic gift"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603055815",
+      "sectionId": "61198263",
+      "listedAt": 1793057955,
       "state": "active",
       "available": true
     },
@@ -1141,6 +1259,8 @@
         "unique ceramic gift"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603056001",
+      "sectionId": "61198263",
+      "listedAt": 1793057844,
       "state": "active",
       "available": true
     },
@@ -1169,6 +1289,8 @@
         "unique ceramic gift"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603056153",
+      "sectionId": "61198263",
+      "listedAt": 1793057691,
       "state": "active",
       "available": true
     },
@@ -1197,6 +1319,8 @@
         "unique ceramic gift"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603079666",
+      "sectionId": "61198255",
+      "listedAt": 1793057250,
       "state": "active",
       "available": true
     },
@@ -1225,6 +1349,8 @@
         "handmade trinket"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603077138",
+      "sectionId": "61198255",
+      "listedAt": 1793057099,
       "state": "active",
       "available": true
     },
@@ -1253,6 +1379,8 @@
         "handmade trinket"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603053557",
+      "sectionId": "61198255",
+      "listedAt": 1793056975,
       "state": "active",
       "available": true
     },
@@ -1281,6 +1409,8 @@
         "handmade trinket"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603060709",
+      "sectionId": "61198255",
+      "listedAt": 1793056855,
       "state": "active",
       "available": true
     },
@@ -1309,6 +1439,8 @@
         "frozen pond glaze"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603053313",
+      "sectionId": "61198257",
+      "listedAt": 1793056606,
       "state": "active",
       "available": true
     },
@@ -1337,6 +1469,8 @@
         "handmade trinket"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603053133",
+      "sectionId": "61198257",
+      "listedAt": 1793056540,
       "state": "active",
       "available": true
     },
@@ -1365,6 +1499,8 @@
         "handmade tray"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603060487",
+      "sectionId": "61198257",
+      "listedAt": 1793056388,
       "state": "active",
       "available": true
     },
@@ -1393,6 +1529,8 @@
         "handmade trinket"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603075624",
+      "sectionId": "61198261",
+      "listedAt": 1793054847,
       "state": "active",
       "available": true
     },
@@ -1421,6 +1559,8 @@
         "ceramic trinket tray"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603051817",
+      "sectionId": "61198261",
+      "listedAt": 1793054719,
       "state": "active",
       "available": true
     },
@@ -1449,6 +1589,8 @@
         "ceramic trinket tray"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603074558",
+      "sectionId": "61198261",
+      "listedAt": 1793046982,
       "state": "active",
       "available": true
     },
@@ -1477,6 +1619,8 @@
         "handmade pottery"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603079828",
+      "sectionId": "61198255",
+      "listedAt": 1793029581,
       "state": "active",
       "available": true
     },
@@ -1505,6 +1649,8 @@
         "handbuilt ceramics"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603040123",
+      "sectionId": "61198261",
+      "listedAt": 1793028504,
       "state": "active",
       "available": true
     },
@@ -1533,6 +1679,8 @@
         "ceramic trinket bowl"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603084602",
+      "sectionId": "61198255",
+      "listedAt": 1793027890,
       "state": "active",
       "available": true
     },
@@ -1558,6 +1706,8 @@
         "one of a kind"
       ],
       "etsyUrl": "https://www.etsy.com/listing/4603079006",
+      "sectionId": "",
+      "listedAt": 1793058093,
       "state": "sold_out",
       "available": false
     }
