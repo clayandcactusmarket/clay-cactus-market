@@ -39,6 +39,10 @@ Example using VS Code Live Server:
 
 ## Manage Ceramics Listings
 
+Automatic Etsy synchronization is prepared in `.github/workflows/etsy-pages.yml`.
+See [ETSY-SYNC.md](ETSY-SYNC.md) for secure setup and deployment. Once enabled,
+edit active listings in Etsy; the steps below describe the manual fallback only.
+
 1. Add the product photo to assets/ceramics/
 2. Add an entry to the products list in data/ceramics.json (id, name, price, currency, image, imageAlt, description, seoDescription, tags, etsyUrl, available)
 3. Set "available": false to show a Sold badge and hide the Buy button
