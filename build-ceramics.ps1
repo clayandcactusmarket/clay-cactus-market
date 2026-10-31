@@ -99,6 +99,22 @@ $data = [System.IO.File]::ReadAllText($dataFile, $utf8NoBom) | ConvertFrom-Json
 $products = @($data.products)
 
 $blocks = @()
+$blocks += @'
+<div id="ceramics-controls" class="ceramics-controls" hidden>
+    <div id="ceramics-categories" class="ceramics-categories" role="group" aria-label="Filter pottery by category"></div>
+    <div class="ceramics-toolbar">
+        <p id="ceramics-count" role="status" aria-live="polite"></p>
+        <label for="ceramics-sort">Sort by
+            <select id="ceramics-sort">
+                <option value="recent">Most Recent</option>
+                <option value="price-asc">Lowest Price</option>
+                <option value="price-desc">Highest Price</option>
+            </select>
+        </label>
+    </div>
+</div>
+<p id="ceramics-empty" class="ceramics__status" hidden>No pieces in this category yet. Please choose another category.</p>
+'@
 if ($products.Count -gt 0) {
     $blocks += '<p id="ceramics-status" class="ceramics__status" role="status" hidden></p>'
     $cardLines = @()
@@ -116,6 +132,8 @@ if ($products.Count -gt 0) {
 $modalProducts = @()
 foreach ($product in $products) {
     $modalProducts += [ordered]@{
+        sectionId   = $product.sectionId
+        listedAt    = $product.listedAt
         id          = $product.id
         name        = $product.name
         price       = $product.price
@@ -127,7 +145,7 @@ foreach ($product in $products) {
         available   = ($product.available -ne $false)
     }
 }
-$modalJson = (([ordered]@{ products = $modalProducts }) | ConvertTo-Json -Depth 5) -replace '</', '<\/'
+$modalJson = (([ordered]@{ products = $modalProducts; sections = @($data.sections) }) | ConvertTo-Json -Depth 5) -replace '</', '<\/'
 $blocks += '<script type="application/json" id="ceramics-data">' + "`n" + $modalJson + "`n" + '</script>'
 
 $ldJson = ((Build-StructuredData $products) | ConvertTo-Json -Depth 10) -replace '</', '<\/'

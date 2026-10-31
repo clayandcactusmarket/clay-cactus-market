@@ -23,6 +23,64 @@
         return;
     }
 
+    var controls = document.getElementById('ceramics-controls');
+    var categories = document.getElementById('ceramics-categories');
+    var sortSelect = document.getElementById('ceramics-sort');
+    var count = document.getElementById('ceramics-count');
+    var empty = document.getElementById('ceramics-empty');
+    var selectedCategory = '';
+    var cards = Array.from(grid.querySelectorAll('.ceramics-card')).map(function (element, index) {
+        return { element: element, index: index,
+            product: productsById[element.querySelector('[data-product-id]').getAttribute('data-product-id')] };
+    });
+
+    function updateCollection() {
+        var visible = 0;
+        var sold = 0;
+        cards.slice().sort(function (a, b) {
+            var delta;
+            if (sortSelect.value === 'price-asc') { delta = a.product.price - b.product.price; }
+            else if (sortSelect.value === 'price-desc') { delta = b.product.price - a.product.price; }
+            else { delta = Number(b.product.listedAt || 0) - Number(a.product.listedAt || 0); }
+            return delta || a.index - b.index;
+        }).forEach(function (card) {
+            var matches = !selectedCategory || String(card.product.sectionId || '') === selectedCategory;
+            card.element.hidden = !matches;
+            if (matches) {
+                visible++;
+                if (card.product.available === false) { sold++; }
+            }
+            grid.appendChild(card.element);
+        });
+        count.textContent = visible + (visible === 1 ? ' piece' : ' pieces') +
+            (sold ? ' · ' + sold + ' sold' : '');
+        empty.hidden = visible !== 0;
+        categories.querySelectorAll('button').forEach(function (button) {
+            button.setAttribute('aria-pressed', String(button.dataset.category === selectedCategory));
+        });
+    }
+
+    if (controls && categories && sortSelect && count && empty) {
+        [{id: '', name: 'All pieces'}].concat((data.sections || []).filter(Boolean)).forEach(function (section) {
+            var button = document.createElement('button');
+            button.type = 'button';
+            button.dataset.category = String(section.id);
+            var total = cards.filter(function (card) {
+                return !section.id || String(card.product.sectionId || '') === String(section.id);
+            }).length;
+            button.textContent = section.name + ' (' + total + ')';
+            button.setAttribute('aria-controls', 'ceramics-grid');
+            button.addEventListener('click', function () {
+                selectedCategory = String(section.id);
+                updateCollection();
+            });
+            categories.appendChild(button);
+        });
+        sortSelect.addEventListener('change', updateCollection);
+        controls.hidden = false;
+        updateCollection();
+    }
+
     function formatPrice(product) {
         try {
             return new Intl.NumberFormat('en-US', {
