@@ -31,6 +31,8 @@ class SyncTests(unittest.TestCase):
             if path == "shops":
                 return {"results": [{"shop_id": 99, "shop_name": "ClayAndCactusMarketOther"},
                                     {"shop_id": 42, "shop_name": "ClayAndCactusMarket"}]}
+            if path == 'shops/42/sections':
+                return {'results': [{'shop_section_id': 7, 'title': 'Cups &amp; Tumblers', 'rank': 1}]}
             if path.endswith("/images"):
                 if failure == "images":
                     raise ValueError("Image fetch failed")
@@ -45,6 +47,20 @@ class SyncTests(unittest.TestCase):
             count = total + (1 if offset and failure == "changed" else 0)
             return {"count": count, "results": rows}
         return request
+
+    def test_section_and_recent_fields(self):
+        source = dict(listing(1), shop_section_id=7, creation_timestamp=1234)
+        product = convert_listing(source, IMAGES)
+        self.assertEqual(product['sectionId'], '7')
+        self.assertEqual(product['listedAt'], 1234)
+        data = fetch_listings(self.api(total=1))
+        self.assertEqual(data['sections'], [{'id': '7', 'name': 'Cups & Tumblers'}])
+
+    def test_deleted_section_preserved_for_archived_sold_piece(self):
+        old = dict(convert_listing(dict(listing(3), state='sold_out'), IMAGES), sectionId='8')
+        data = fetch_listings(self.api(total=1), previous={
+            'products': [old], 'sections': [{'id': '8', 'name': 'Old category'}]})
+        self.assertIn({'id': '8', 'name': 'Old category'}, data['sections'])
 
     def test_all_pages(self):
         products = fetch_listings(self.api())["products"]
