@@ -64,7 +64,7 @@ function Build-StructuredData($products) {
             item      = [ordered]@{
                 '@type'      = 'Product'
                 name         = $product.name
-                image        = $siteUrl + '/' + ($product.image -replace '^/', '')
+                image        = if ($product.image -match '^https://') { $product.image } else { $siteUrl + '/' + ($product.image -replace '^/', '') }
                 description  = $description
                 brand        = [ordered]@{ '@type' = 'Brand'; name = 'Ceramics by Jaymi' }
                 creator      = [ordered]@{ '@type' = 'Person'; name = 'Jaymi' }
