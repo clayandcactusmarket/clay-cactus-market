@@ -72,6 +72,11 @@ def fetch_listings(api=request, include_sold=False, previous=None):
     if len(matches) != 1:
         raise ValueError("Could not identify the exact Etsy shop; catalog unchanged.")
     shop_id = matches[0]["shop_id"]
+    sections = [{'id': str(s['shop_section_id']), 'name': html.unescape(s['title'])}
+                for s in sorted(api(f'shops/{shop_id}/sections')['results'],
+                                key=lambda s: s['rank'])]
+    if len({s['id'] for s in sections}) != len(sections):
+        raise ValueError('Duplicate Etsy shop sections; catalog unchanged.')
     listings = fetch_state(api, shop_id, 'active')
     if include_sold:
         listings += fetch_state(api, shop_id, 'sold_out')
@@ -87,7 +92,12 @@ def fetch_listings(api=request, include_sold=False, previous=None):
             continue
         images = api(f"listings/{listing['listing_id']}/images")["results"]
         products[str(listing['listing_id'])] = convert_listing(listing, images)
-    return {"collection": "Ceramics by Jaymi", "shopUrl": f"https://www.etsy.com/shop/{SHOP}",
+    # Keep a category for archived sold pieces even if Etsy later removes the section.
+    current_ids = {s['id'] for s in sections}
+    used_ids = {p.get('sectionId') for p in products.values()}
+    sections += [s for s in (previous or {}).get('sections', [])
+                 if s['id'] not in current_ids and s['id'] in used_ids]
+    return {"sections": sections, "collection": "Ceramics by Jaymi", "shopUrl": f"https://www.etsy.com/shop/{SHOP}",
             "products": sorted(products.values(), key=lambda p: not p['available'])}
 
 
@@ -111,6 +121,8 @@ def convert_listing(listing, images):
             "description": description, "seoDescription": description,
             "tags": [html.unescape(tag) for tag in listing.get("tags", [])],
             "etsyUrl": f"https://www.etsy.com/listing/{listing['listing_id']}",
+            "sectionId": str(listing.get('shop_section_id') or ''),
+            "listedAt": listing.get('creation_timestamp') or listing.get('created_timestamp') or 0,
             "state": listing['state'], "available": listing['state'] == 'active'}
 
 
