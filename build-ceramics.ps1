@@ -101,9 +101,16 @@ $products = @($data.products)
 $blocks = @()
 $blocks += @'
 <div id="ceramics-controls" class="ceramics-controls" hidden>
+    <div class="ceramics-controls__heading">
+        <p class="section-label">Find your favorite</p>
+        <h2>Browse the collection</h2>
+    </div>
     <div id="ceramics-categories" class="ceramics-categories" role="group" aria-label="Filter pottery by category"></div>
     <div class="ceramics-toolbar">
-        <p id="ceramics-count" role="status" aria-live="polite"></p>
+        <div class="ceramics-toolbar__selection">
+            <button type="button" id="ceramics-show-all" class="ceramics-show-all" aria-controls="ceramics-grid" aria-pressed="true">All pieces</button>
+            <p id="ceramics-count" role="status" aria-live="polite"></p>
+        </div>
         <label for="ceramics-sort">Sort by
             <select id="ceramics-sort">
                 <option value="recent">Most Recent</option>

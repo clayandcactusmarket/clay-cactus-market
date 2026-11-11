@@ -25,6 +25,7 @@
 
     var controls = document.getElementById('ceramics-controls');
     var categories = document.getElementById('ceramics-categories');
+    var showAll = document.getElementById('ceramics-show-all');
     var sortSelect = document.getElementById('ceramics-sort');
     var count = document.getElementById('ceramics-count');
     var empty = document.getElementById('ceramics-empty');
@@ -58,23 +59,45 @@
         categories.querySelectorAll('button').forEach(function (button) {
             button.setAttribute('aria-pressed', String(button.dataset.category === selectedCategory));
         });
+        showAll.setAttribute('aria-pressed', String(selectedCategory === ''));
     }
 
-    if (controls && categories && sortSelect && count && empty) {
-        [{id: '', name: 'All pieces'}].concat((data.sections || []).filter(Boolean)).forEach(function (section) {
+    if (controls && categories && showAll && sortSelect && count && empty) {
+        (data.sections || []).filter(Boolean).forEach(function (section) {
             var button = document.createElement('button');
             button.type = 'button';
             button.dataset.category = String(section.id);
-            var total = cards.filter(function (card) {
-                return !section.id || String(card.product.sectionId || '') === String(section.id);
-            }).length;
-            button.textContent = section.name + ' (' + total + ')';
+            var matchingCards = cards.filter(function (card) {
+                return String(card.product.sectionId || '') === String(section.id);
+            });
+            var featured = matchingCards.find(function (card) {
+                return card.product.available !== false && card.product.image;
+            }) || matchingCards.find(function (card) { return card.product.image; });
+            var image = document.createElement('img');
+            image.className = 'ceramics-categories__image';
+            image.src = featured ? featured.product.image : 'assets/gold-sun-logo.png';
+            image.alt = '';
+            image.loading = 'lazy';
+            if (!featured) { image.classList.add('ceramics-categories__image--placeholder'); }
+            var name = document.createElement('span');
+            name.className = 'ceramics-categories__name';
+            name.textContent = section.name;
+            var totalLabel = document.createElement('span');
+            totalLabel.className = 'ceramics-categories__count';
+            totalLabel.textContent = matchingCards.length === 1 ? '1 piece' : matchingCards.length + ' pieces';
+            button.appendChild(image);
+            button.appendChild(name);
+            button.appendChild(totalLabel);
             button.setAttribute('aria-controls', 'ceramics-grid');
             button.addEventListener('click', function () {
                 selectedCategory = String(section.id);
                 updateCollection();
             });
             categories.appendChild(button);
+        });
+        showAll.addEventListener('click', function () {
+            selectedCategory = '';
+            updateCollection();
         });
         sortSelect.addEventListener('change', updateCollection);
         controls.hidden = false;

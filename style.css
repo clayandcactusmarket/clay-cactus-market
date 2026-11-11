@@ -629,8 +629,28 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     margin-bottom: 24px;
 }
 
+.ceramics-welcome{
+    position: relative;
+    overflow: hidden;
+    padding: clamp(30px, 5vw, 56px) 24px;
+    border-radius: 18px;
+    background: #f6f1ea;
+    text-align: center;
+}
+
+.ceramics-welcome__leaf{
+    position: absolute;
+    top: -18px;
+    left: -12px;
+    width: clamp(90px, 15vw, 160px);
+    opacity: 0.2;
+    pointer-events: none;
+}
+
 .ceramics__heading{
-    margin: 0 0 22px;
+    position: relative;
+    max-width: 760px;
+    margin: 0 auto 18px;
     text-align: center;
     color: #485766;
     font-size: clamp(2.1rem, 4vw, 3.4rem);
@@ -650,10 +670,12 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 }
 
 .ceramics__intro{
+    position: relative;
     max-width: 720px;
-    margin: 0 auto 20px;
+    margin: 0 auto;
     text-align: center;
     color: #5e6f79;
+    font-size: 1.15rem;
 }
 
 .ceramics__intro a{
@@ -675,9 +697,9 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
 .ceramics-card{
     flex: 0 1 280px;
     min-width: min(100%, 220px);
-    background: #f1e7d9;
-    border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    background: #f6f1ea;
+    border-radius: 14px 14px 6px 6px;
+    box-shadow: 0 4px 14px rgba(72, 87, 102, 0.06);
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -742,11 +764,12 @@ h1, h2, h3, h4, h5, h6, p, a, button, input, textarea {
     flex-direction: column;
     gap: 6px;
     padding: 16px 18px 20px;
+    border-top: 3px solid #e8d5c0;
 }
 
 .ceramics-card__name{
     color: #485766;
-    font-size: 1.15rem;
+    font-size: 1.4rem;
     line-height: 1.1;
 }
 
@@ -1495,24 +1518,59 @@ footer {
     }
 }
 
-/* Etsy categories and collection sorting */
-.ceramics-controls { margin: 2rem 0 1.25rem; }
+/* Collection browsing */
+.ceramics-controls { margin: 2.5rem 0 1.5rem; }
 .ceramics-controls[hidden], .ceramics-card[hidden], #ceramics-empty[hidden] { display: none; }
-.ceramics-categories { display: flex; flex-wrap: wrap; gap: .65rem; }
-.ceramics-categories button, .ceramics-toolbar select {
-    font: 600 1rem/1.4 system-ui, sans-serif;
-    color: #485766; background: #fdfbf9; border: 1px solid #b8c0c4;
-    border-radius: 6px; padding: .75rem 1rem; min-height: 44px;
+.ceramics-controls__heading { text-align: center; margin-bottom: 1.25rem; }
+.ceramics-controls__heading .section-label { margin-bottom: .2rem; }
+.ceramics-controls__heading h2 { margin: 0; color: #485766; font-size: 2.3rem; line-height: 1; }
+.ceramics-categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; }
+.ceramics-categories button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    padding: 5px 5px 9px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    background: #f6f1ea;
+    color: #485766;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color .2s, background-color .2s;
 }
-.ceramics-categories button { cursor: pointer; }
-.ceramics-categories button[aria-pressed="true"] { background: #485766; color: white; border-color: #485766; }
-.ceramics-categories button:hover { border-color: #485766; }
+.ceramics-categories button:hover { background: #f4e9dd; }
+.ceramics-categories button[aria-pressed="true"] { border-color: #485766; background: #f4e9dd; }
+.ceramics-categories__image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 7px;
+    background: #f1e7d9;
+}
+.ceramics-categories__image--placeholder { object-fit: contain; padding: 20%; }
+.ceramics-categories__name { margin-top: 7px; font-size: 1.3rem; font-weight: 700; line-height: 1; text-transform: uppercase; }
+.ceramics-categories__count { margin-top: 3px; color: #5e6f79; font-size: 1rem; line-height: 1; }
+.ceramics-show-all, .ceramics-toolbar select {
+    font: 700 1.25rem/1.2 'Amatic SC', 'Raleway', sans-serif;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #485766; background: #fdfbf9; border: 1px solid #c9b8a8;
+    border-radius: 24px; padding: .55rem 1rem; min-height: 44px;
+}
+.ceramics-show-all { cursor: pointer; }
+.ceramics-show-all[aria-pressed="true"] { background: #485766; color: white; border-color: #485766; }
 .ceramics-controls :focus-visible { outline: 3px solid #a75e3b; outline-offset: 3px; }
-.ceramics-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1.25rem; }
-.ceramics-toolbar p, .ceramics-toolbar label { font: 1rem/1.5 system-ui, sans-serif; }
-.ceramics-toolbar label { display: flex; align-items: center; gap: .75rem; }
+.ceramics-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1.5rem; padding: .75rem 0; border-top: 1px solid #e8d5c0; border-bottom: 1px solid #e8d5c0; }
+.ceramics-toolbar__selection { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+.ceramics-toolbar p, .ceramics-toolbar label { margin: 0; color: #5e6f79; font: 700 1.25rem/1.2 'Amatic SC', 'Raleway', sans-serif; letter-spacing: .5px; text-transform: uppercase; }
+.ceramics-toolbar label { display: flex; align-items: center; gap: .75rem; white-space: nowrap; }
+.ceramics-toolbar select { cursor: pointer; }
 @media (max-width: 600px) {
-    .ceramics-categories { gap: .5rem; }
-    .ceramics-categories button { font-size: .85rem; padding: .6rem .75rem; }
-    .ceramics-toolbar { align-items: flex-start; flex-direction: column; gap: .25rem; }
+    .ceramics { margin-top: 24px; }
+    .ceramics-welcome { padding: 34px 20px; }
+    .ceramics-welcome__leaf { opacity: .12; }
+    .ceramics-categories { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; }
+    .ceramics-categories__name { font-size: 1.15rem; }
+    .ceramics-toolbar { flex-wrap: wrap; gap: .75rem; }
 }

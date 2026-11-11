@@ -48,10 +48,35 @@
 
     <main>
         <section class="ceramics container" aria-labelledby="ceramics-heading">
-            <h1 id="ceramics-heading" class="ceramics__heading">Handmade Pottery &amp; Ceramics in Henderson, Nevada</h1>
-            <p class="ceramics__intro">Shop one-of-a-kind handmade pottery and ceramics made by Jaymi in Henderson, Nevada. Every bowl, tray, and carved piece is shaped and glazed by hand, and available through the <a href="https://www.etsy.com/shop/ClayAndCactusMarket" target="_blank" rel="noopener noreferrer">Clay &amp; Cactus Market Etsy shop</a>.</p>
+            <div class="ceramics-welcome">
+                <img class="ceramics-welcome__leaf" src="assets/gold-leaf-straight.png" alt="" aria-hidden="true">
+                <p class="section-label">A little corner of the market</p>
+                <h1 id="ceramics-heading" class="ceramics__heading">Handmade Pottery &amp; Ceramics in Henderson, Nevada</h1>
+                <p class="ceramics__intro">Shop one-of-a-kind handmade pottery and ceramics made by Jaymi in Henderson, Nevada. Every bowl, tray, and carved piece is shaped and glazed by hand, and available through the <a href="https://www.etsy.com/shop/ClayAndCactusMarket" target="_blank" rel="noopener noreferrer">Clay &amp; Cactus Market Etsy shop</a>.</p>
+            </div>
             <!-- The section between the CERAMICS markers is generated from data/ceramics.json - do not edit by hand. To update listings, edit data/ceramics.json, then run: .\build-ceramics.ps1 -->
             <!-- CERAMICS:BEGIN-GENERATED -->
+            <div id="ceramics-controls" class="ceramics-controls" hidden>
+                <div class="ceramics-controls__heading">
+                    <p class="section-label">Find your favorite</p>
+                    <h2>Browse the collection</h2>
+                </div>
+                <div id="ceramics-categories" class="ceramics-categories" role="group" aria-label="Filter pottery by category"></div>
+                <div class="ceramics-toolbar">
+                    <div class="ceramics-toolbar__selection">
+                        <button type="button" id="ceramics-show-all" class="ceramics-show-all" aria-controls="ceramics-grid" aria-pressed="true">All pieces</button>
+                        <p id="ceramics-count" role="status" aria-live="polite"></p>
+                    </div>
+                    <label for="ceramics-sort">Sort by
+                        <select id="ceramics-sort">
+                            <option value="recent">Most Recent</option>
+                            <option value="price-asc">Lowest Price</option>
+                            <option value="price-desc">Highest Price</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <p id="ceramics-empty" class="ceramics__status" hidden>No pieces in this category yet. Please choose another category.</p>
             <p id="ceramics-status" class="ceramics__status" role="status" hidden></p>
             <ul id="ceramics-grid" class="ceramics-grid">
                 <li class="ceramics-card">
@@ -324,6 +349,8 @@
             {
                 "products":  [
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603079828",
                                      "name":  "Small Handmade Ceramic Pot - Carved Botanical Design",
                                      "price":  48,
@@ -335,6 +362,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603040123",
                                      "name":  "Large Catch-All Tray",
                                      "price":  65,
@@ -346,6 +375,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603084602",
                                      "name":  "Frozen Pond Bowl",
                                      "price":  45,
@@ -357,6 +388,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603074558",
                                      "name":  "Floral Tray",
                                      "price":  45,
@@ -368,6 +401,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4605302046",
                                      "name":  "Hand Carved Blue Oval Ceramic Trinket Dish",
                                      "price":  35,
@@ -379,6 +414,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4605304124",
                                      "name":  "Hand Carved Floral Ceramic Soap Dish",
                                      "price":  25,
@@ -390,6 +427,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4605284741",
                                      "name":  "Pink Glazed Ceramic Bowl",
                                      "price":  45,
@@ -401,6 +440,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4605304758",
                                      "name":  "Heart Carved Ceramic Pinch Pot",
                                      "price":  35,
@@ -412,6 +453,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4605285587",
                                      "name":  "Mandala and Botanical Carved Ceramic Bowl",
                                      "price":  35,
@@ -423,6 +466,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603051817",
                                      "name":  "Small Frozen Pond Ceramic Tray",
                                      "price":  48,
@@ -434,6 +479,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603075624",
                                      "name":  "Stamped Ceramic Tray",
                                      "price":  32,
@@ -445,6 +492,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603060487",
                                      "name":  "Rose Stamped Ceramic Dish",
                                      "price":  33,
@@ -456,6 +505,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603053133",
                                      "name":  "Frozen Pond Ceramic Plate",
                                      "price":  38,
@@ -467,6 +518,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603053313",
                                      "name":  "Floral Ceramic Plate",
                                      "price":  35,
@@ -478,6 +531,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603060709",
                                      "name":  "Small Handmade Ceramic Bowl",
                                      "price":  33,
@@ -489,6 +544,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603053557",
                                      "name":  "Textured Ceramic Trinket Bowl",
                                      "price":  35,
@@ -500,6 +557,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603077138",
                                      "name":  "Small Glazed Ceramic Bowl",
                                      "price":  25,
@@ -511,6 +570,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603079666",
                                      "name":  "Small Brown Trinket Bowl",
                                      "price":  32,
@@ -522,6 +583,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603056153",
                                      "name":  "Scalloped Rim Ceramic Cup",
                                      "price":  35,
@@ -533,6 +596,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603056001",
                                      "name":  "Small Glazed Ceramic Cup",
                                      "price":  25,
@@ -544,6 +609,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603055815",
                                      "name":  "Patterned Ceramic Cup",
                                      "price":  38,
@@ -555,6 +622,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603079006",
                                      "name":  "Leaf Pattern Ceramic Cup",
                                      "price":  35,
@@ -566,6 +635,8 @@
                                      "available":  false
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603078814",
                                      "name":  "Textured Ceramic Jar with Lid",
                                      "price":  40,
@@ -577,6 +648,8 @@
                                      "available":  true
                                  },
                                  {
+                                     "sectionId":  null,
+                                     "listedAt":  null,
                                      "id":  "4603078622",
                                      "name":  "Patterned Ceramic Jar with Lid",
                                      "price":  45,
@@ -587,6 +660,9 @@
                                      "etsyUrl":  "https://www.etsy.com/listing/4603078622/patterned-ceramic-jar-with-lid-handmade",
                                      "available":  true
                                  }
+                             ],
+                "sections":  [
+                                 null
                              ]
             }
             </script>
