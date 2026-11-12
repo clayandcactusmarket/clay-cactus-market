@@ -860,36 +860,6 @@
       "available": true
     },
     {
-      "id": "4605302046",
-      "name": "Hand-Carved Blue Oval Ceramic Trinket Dish | Handmade Pottery",
-      "price": 40.0,
-      "currency": "USD",
-      "image": "assets/etsy/4605302046-5b5d9b85d1477d43.jpg",
-      "imageAlt": "Hand-Carved Blue Oval Ceramic Trinket Dish | Handmade Pottery",
-      "description": "This little oval dish is one of my personal favorites. It's an older piece that I hand built and shaped, then carved a design into the bottom before glazing it.\n\nThe glaze ended up covering most of the carving, but you can still catch glimpses underneath. The combination of soft blues, darker pooling and brown speckles is really what makes me love this one. It's a small dish for rings or other little things.\n\nThe photos show the actual piece you'll receive. Because each piece is handmade, small quirks and imperfections are part of its character, including slight variations in shape or a foot that isn't perfectly flat. If you have a concern about the quality of your piece, please reach out. I'm happy to work with you to arrange a return.\n\nCare & Details\n- Handbuilt from B-Mix clay\n- Carved design beneath the glaze\n- Layered blue glaze with brown speckling",
-      "seoDescription": "This little oval dish is one of my personal favorites. It's an older piece that I hand built and shaped, then carved a design into the bottom before glazing it.\n\nThe glaze ended up covering most of the carving, but you can still catch glimpses underneath. The combination of soft blues, darker pooling and brown speckles is really what makes me love this one. It's a small dish for rings or other little things.\n\nThe photos show the actual piece you'll receive. Because each piece is handmade, small quirks and imperfections are part of its character, including slight variations in shape or a foot that isn't perfectly flat. If you have a concern about the quality of your piece, please reach out. I'm happy to work with you to arrange a return.\n\nCare & Details\n- Handbuilt from B-Mix clay\n- Carved design beneath the glaze\n- Layered blue glaze with brown speckling",
-      "tags": [
-        "oval ceramic dish",
-        "blue pottery dish",
-        "hand carved pottery",
-        "ceramic ring dish",
-        "handbuilt pottery",
-        "jewelry holder",
-        "small ceramic tray",
-        "pottery gift",
-        "ceramic trinket",
-        "one of a kind",
-        "blue ceramic tray",
-        "handmade ceramics",
-        "carved ceramic dish"
-      ],
-      "etsyUrl": "https://www.etsy.com/listing/4605302046",
-      "sectionId": "61198261",
-      "listedAt": 1793323445,
-      "state": "active",
-      "available": true
-    },
-    {
       "id": "4605302504",
       "name": "My First Rodeo Ceramic Travel Tumbler | Hand-Carved Pottery Cup",
       "price": 80.0,
@@ -1802,6 +1772,36 @@
       "etsyUrl": "https://www.etsy.com/listing/4605284347",
       "sectionId": "61182396",
       "listedAt": 1793322864,
+      "state": "sold_out",
+      "available": false
+    },
+    {
+      "id": "4605302046",
+      "name": "Hand-Carved Blue Oval Ceramic Trinket Dish | Handmade Pottery",
+      "price": 40.0,
+      "currency": "USD",
+      "image": "assets/etsy/4605302046-5b5d9b85d1477d43.jpg",
+      "imageAlt": "Hand-Carved Blue Oval Ceramic Trinket Dish | Handmade Pottery",
+      "description": "This little oval dish is one of my personal favorites. It's an older piece that I hand built and shaped, then carved a design into the bottom before glazing it.\n\nThe glaze ended up covering most of the carving, but you can still catch glimpses underneath. The combination of soft blues, darker pooling and brown speckles is really what makes me love this one. It's a small dish for rings or other little things.\n\nThe photos show the actual piece you'll receive. Because each piece is handmade, small quirks and imperfections are part of its character, including slight variations in shape or a foot that isn't perfectly flat. If you have a concern about the quality of your piece, please reach out. I'm happy to work with you to arrange a return.\n\nCare & Details\n- Handbuilt from B-Mix clay\n- Carved design beneath the glaze\n- Layered blue glaze with brown speckling",
+      "seoDescription": "This little oval dish is one of my personal favorites. It's an older piece that I hand built and shaped, then carved a design into the bottom before glazing it.\n\nThe glaze ended up covering most of the carving, but you can still catch glimpses underneath. The combination of soft blues, darker pooling and brown speckles is really what makes me love this one. It's a small dish for rings or other little things.\n\nThe photos show the actual piece you'll receive. Because each piece is handmade, small quirks and imperfections are part of its character, including slight variations in shape or a foot that isn't perfectly flat. If you have a concern about the quality of your piece, please reach out. I'm happy to work with you to arrange a return.\n\nCare & Details\n- Handbuilt from B-Mix clay\n- Carved design beneath the glaze\n- Layered blue glaze with brown speckling",
+      "tags": [
+        "oval ceramic dish",
+        "blue pottery dish",
+        "hand carved pottery",
+        "ceramic ring dish",
+        "handbuilt pottery",
+        "jewelry holder",
+        "small ceramic tray",
+        "pottery gift",
+        "ceramic trinket",
+        "one of a kind",
+        "blue ceramic tray",
+        "handmade ceramics",
+        "carved ceramic dish"
+      ],
+      "etsyUrl": "https://www.etsy.com/listing/4605302046",
+      "sectionId": "61198261",
+      "listedAt": 1793323445,
       "state": "sold_out",
       "available": false
     }
