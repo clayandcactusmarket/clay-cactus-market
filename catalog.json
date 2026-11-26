@@ -874,22 +874,6 @@
       "available": true
     },
     {
-      "id": "4605304124",
-      "name": "Hand-Carved Floral Ceramic Soap Dish",
-      "price": 30.0,
-      "currency": "USD",
-      "image": "assets/etsy/4605304124-41b983f598a4b45c.jpg",
-      "imageAlt": "Hand-Carved Floral Ceramic Soap Dish",
-      "description": "This sweet little ceramic dish has softly scalloped edges and a floral design I carved into the center. I kept the shape simple and left it without a foot, giving it a lovely low profile.\n\nIt’s just the right size for a facial cleansing bar or a small round soap. I especially love how the glaze settles into the carved flower, bringing out all those little details.\n\nCare & Details\n- Handmade ceramic\n- Hand-carved floral design\n- Scalloped edges\n- Footless design\n- Nontoxic glaze\n\nThe photos show the actual piece you'll receive. Because each piece is handmade, small quirks and imperfections are part of its character, including slight variations in shape or a foot that isn't perfectly flat. If you have a concern about the quality of your piece, please reach out. I'm happy to work with you to arrange a return.",
-      "seoDescription": "This sweet little ceramic dish has softly scalloped edges and a floral design I carved into the center. I kept the shape simple and left it without a foot, giving it a lovely low profile.\n\nIt’s just the right size for a facial cleansing bar or a small round soap. I especially love how the glaze settles into the carved flower, bringing out all those little details.\n\nCare & Details\n- Handmade ceramic\n- Hand-carved floral design\n- Scalloped edges\n- Footless design\n- Nontoxic glaze\n\nThe photos show the actual piece you'll receive. Because each piece is handmade, small quirks and imperfections are part of its character, including slight variations in shape or a foot that isn't perfectly flat. If you have a concern about the quality of your piece, please reach out. I'm happy to work with you to arrange a return.",
-      "tags": [],
-      "etsyUrl": "https://www.etsy.com/listing/4605304124",
-      "sectionId": "61198261",
-      "listedAt": 1793323085,
-      "state": "active",
-      "available": true
-    },
-    {
       "id": "4605304758",
       "name": "Heart-Carved Ceramic Pinch Pot",
       "price": 40.0,
@@ -1802,6 +1786,22 @@
       "etsyUrl": "https://www.etsy.com/listing/4605304510",
       "sectionId": "61198255",
       "listedAt": 1793327845,
+      "state": "sold_out",
+      "available": false
+    },
+    {
+      "id": "4605304124",
+      "name": "Hand-Carved Floral Ceramic Soap Dish",
+      "price": 30.0,
+      "currency": "USD",
+      "image": "assets/etsy/4605304124-41b983f598a4b45c.jpg",
+      "imageAlt": "Hand-Carved Floral Ceramic Soap Dish",
+      "description": "This sweet little ceramic dish has softly scalloped edges and a floral design I carved into the center. I kept the shape simple and left it without a foot, giving it a lovely low profile.\n\nIt’s just the right size for a facial cleansing bar or a small round soap. I especially love how the glaze settles into the carved flower, bringing out all those little details.\n\nCare & Details\n- Handmade ceramic\n- Hand-carved floral design\n- Scalloped edges\n- Footless design\n- Nontoxic glaze\n\nThe photos show the actual piece you'll receive. Because each piece is handmade, small quirks and imperfections are part of its character, including slight variations in shape or a foot that isn't perfectly flat. If you have a concern about the quality of your piece, please reach out. I'm happy to work with you to arrange a return.",
+      "seoDescription": "This sweet little ceramic dish has softly scalloped edges and a floral design I carved into the center. I kept the shape simple and left it without a foot, giving it a lovely low profile.\n\nIt’s just the right size for a facial cleansing bar or a small round soap. I especially love how the glaze settles into the carved flower, bringing out all those little details.\n\nCare & Details\n- Handmade ceramic\n- Hand-carved floral design\n- Scalloped edges\n- Footless design\n- Nontoxic glaze\n\nThe photos show the actual piece you'll receive. Because each piece is handmade, small quirks and imperfections are part of its character, including slight variations in shape or a foot that isn't perfectly flat. If you have a concern about the quality of your piece, please reach out. I'm happy to work with you to arrange a return.",
+      "tags": [],
+      "etsyUrl": "https://www.etsy.com/listing/4605304124",
+      "sectionId": "61198261",
+      "listedAt": 1793323085,
       "state": "sold_out",
       "available": false
     }
